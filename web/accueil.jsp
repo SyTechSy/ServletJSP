@@ -21,11 +21,16 @@
             <li><a href="#">Apropos</a></li>
             <li><a href="#">Service</a></li>
             <li><a href="#">Contact</a></li>
-            <a href="${pageContext.request.contextPath}/Connection.jsp"><button>Déconnection</button></a>
         </ul>
-        <div class="icon">
+        
+        
+        <!--<a href="${pageContext.request.contextPath}/Connection.jsp"><button>Déconnection</button></a>-->
+        <a href="MonServlet2"><button style="padding: 8px 20px; background: transparent; border: 1px solid #FFF;
+                                      border-radius: 10px; margin-right: 20px; cursor: pointer;
+                                      color: #fff">Déconnection</button></a>
+        <!--<div class="icon">
             <i class="fas fa-bars"></i>
-        </div>
+        </div>-->
     </nav>
     <!-- contenu de la page -->
     <div class="contenu">    

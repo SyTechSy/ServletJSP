@@ -22,7 +22,7 @@
 
         <!-- nom de la formulaire -->
         <div class="form-container">
-            <form class="form" method="post" action="MonServlet">
+            <form class="form" method="post" action="MonServlet2">
                 <!-- côté email -->
                 <label for="nom">Pseudo</label> <br>
                 <input type="text" name="pseudo" required="required" id="nom" placeholder="nom@example.com"> <br>

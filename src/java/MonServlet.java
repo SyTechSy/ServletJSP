@@ -21,8 +21,6 @@ import javax.servlet.http.HttpSession;
  */
 @WebServlet(name = "MonServlet", urlPatterns = {"/MonServlet"})
 public class MonServlet extends HttpServlet {
-
-    
     List <Listinscrire> li = new ArrayList();
     
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
@@ -64,12 +62,31 @@ public class MonServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        
+        String non = request.getParameter("nom");
+        String prenom = request.getParameter("prenom");
+        String pseudo = request.getParameter("pseudo");
+        String mail = request.getParameter("mail");
+        String pass = request.getParameter("pass");
+        String pass2 = request.getParameter("pass2");
+
+        // mot de pass
+
+        if(!pass.equals(pass2)) {
+            response.sendRedirect(request.getContextPath() + "/Inscrire.jsp");
+            return;
+        }
+
+        Listinscrire i = new Listinscrire(non, prenom, pseudo, mail, pass, pass2);
+        li.add(i);
+        HttpSession session = request.getSession();
+        session.setAttribute("list", li);
+        
+        session.setAttribute("nom", non);
+        session.setAttribute("prenom", prenom);
+                
+        this.getServletContext().getRequestDispatcher("/accueil.jsp").forward(request, response);
     }
     
-    @Override
-    public String getServletInfo() {
-        return "Short description";
-    }// </editor-fold>
-
+   
 }

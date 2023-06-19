@@ -75,6 +75,12 @@ table, th, td {
     border-radius: .6rem;
 }
 
+button{
+     padding: 8px 20px;
+     background: transparent; 
+     border: 1px solid #fff;
+}
+
 
 table {
     width: 100%;
