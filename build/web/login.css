@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.submit button {
+	text-decoration: none;
+	background-color: #035ADE;
+	color: #fff;
+	padding: 15px 183px!important;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+}
+                    
+@media screen and (max-width: 760px) {
+    .submit button {
+        color: #fff;
+        padding: 7px 122px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .submit button {
+        padding: 7px 50px;
+    }
+
+    .info-ins {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .submit button {
+        padding: 5px 8px;
+    }
+
+    .info-ins p{
+        font-size: 7px;
+    }
+}

@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ECECEC;
+}
+
+nav {
+    height: 80px;
+    background: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    color: #fff;
+    padding-left: 50px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 5px;
+}
+
+nav ul li a {
+    color: #ececece7;
+    padding: 6px 20px;
+    text-decoration: none;
+    line-height: 1px;
+    font-size: 18px;
+    transition: all 1s ease;
+}
+
+nav ul li a:hover{
+    border-bottom: 1px solid #fff;
+    transition: all .5s ease;
+
+}
+
+.contenu h2{
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+
+
+thead th {
+    color: #222;
+    border-bottom: 1px solid #18366124;
+}
+
+table, th, td {
+    padding: 0.7rem;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+.table_body {
+    width: 95%;
+    max-height: calc(89% - .8rem);
+    background-color: rgb(255, 255, 255);
+    margin: .1rem auto;
+    border-radius: .6rem;
+}
+
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+thead th {
+    background-color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #423f3847;
+}
+
+tbody tr:hover {
+    background-color: #183661bb;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
